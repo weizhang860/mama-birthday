@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#fbf7f0" />
+    <title>给妈妈的十三帧日常</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="opening" id="opening" aria-labelledby="opening-title">
+        <div class="sun-shape" aria-hidden="true"></div>
+        <div class="petal petal-one" aria-hidden="true"></div>
+        <div class="petal petal-two" aria-hidden="true"></div>
+        <div class="opening-content">
+          <p class="eyebrow">FOR MOM · WITH LOVE</p>
+          <p class="date-mark">一份小小的生日礼物</p>
+          <h1 id="opening-title">妈妈，<br />生日快乐。</h1>
+          <div class="intro-copy">
+            <p>我整理了一些照片。</p>
+            <p>有的是生活中某些重要的节点，</p>
+            <p>有的是平淡的日常。</p>
+            <p>希望能让你找回昔日温馨温暖的瞬间。</p>
+          </div>
+          <button class="start-button" id="startButton" type="button">
+            <span>打开回忆</span><span aria-hidden="true">→</span>
+          </button>
+          <p class="gesture-hint">可以左右滑动查看</p>
+        </div>
+      </section>
+
+      <section class="album" id="album" aria-label="照片回忆册" hidden>
+        <header class="album-header">
+          <button class="back-button" id="backButton" type="button" aria-label="返回首页">←</button>
+          <div>
+            <p class="eyebrow">MOMENTS TO KEEP</p>
+            <h2>给妈妈的十三帧日常</h2>
+          </div>
+          <div class="counter" aria-live="polite"><span id="currentCount">01</span><i></i><span>13</span></div>
+        </header>
+
+        <div class="gallery-shell">
+          <button class="gallery-arrow previous" id="previousButton" type="button" aria-label="查看上一张照片">←</button>
+          <div class="photo-track" id="photoTrack" tabindex="0" aria-label="左右滑动浏览照片">
+            <article class="photo-slide active" data-index="0">
+              <figure class="photo-frame portrait"><img src="assets/photos/IMG_1551.jpg" alt="一张家庭合影" /></figure>
+              <div class="caption"><span>01</span><p>一段温暖的回忆，等我慢慢写给你。</p></div>
+            </article>
+            <article class="photo-slide" data-index="1">
+              <figure class="photo-frame portrait"><img src="assets/photos/IMG_5585.jpg" alt="一张和妈妈的照片" loading="lazy" /></figure>
+              <div class="caption"><span>02</span><p>一段温暖的回忆，等我慢慢写给你。</p></div>
+            </article>
+            <article class="photo-slide" data-index="2">
+              <figure class="photo-frame portrait"><img src="assets/photos/IMG_5595.jpg" alt="一张和妈妈的照片" loading="lazy" /></figure>
+              <div class="caption"><span>03</span><p>一段温暖的回忆，等我慢慢写给你。</p></div>
+            </article>
+            <article class="photo-slide" data-index="3">
+              <figure class="photo-frame portrait"><img src="assets/photos/IMG_8602.jpg" alt="一张和妈妈的照片" loading="lazy" /></figure>
+              <div class="caption"><span>04</span><p>一段温暖的回忆，等我慢慢写给你。</p></div>
+            </article>
+            <article class="photo-slide" data-index="4">
+              <figure class="photo-frame portrait"><img src="assets/photos/IMG_9189.jpg" alt="一张和妈妈的照片" loading="lazy" /></figure>
+              <div class="caption"><span>05</span><p>一段温暖的回忆，等我慢慢写给你。</p></div>
+            </article>
+            <article class="photo-slide" data-index="5">
+              <figure class="photo-frame portrait"><img src="assets/photos/e689084c214ebe3c5670af907c99af42.jpg" alt="妈妈和孩子的自拍" loading="lazy" /></figure>
+              <div class="caption"><span>06</span><p>一段温暖的回忆，等我慢慢写给你。</p></div>
+            </article>
+            <article class="photo-slide" data-index="6">
+              <figure class="photo-frame portrait"><img src="assets/photos/IMG 4.jpg" alt="妈妈和孩子的合影" loading="lazy" /></figure>
+              <div class="caption"><span>07</span><p>一段温暖的回忆，等我慢慢写给你。</p></div>
+            </article>
+            <article class="photo-slide" data-index="7">
+              <figure class="photo-frame landscape"><img src="assets/photos/IMG_0331.jpg" alt="妈妈和孩子在毕业活动上的合影" loading="lazy" /></figure>
+              <div class="caption"><span>08</span><p>一段温暖的回忆，等我慢慢写给你。</p></div>
+            </article>
+            <article class="photo-slide" data-index="8">
+              <figure class="photo-frame landscape"><img src="assets/photos/IMG_1460.jpg" alt="妈妈的生活自拍" loading="lazy" /></figure>
+              <div class="caption"><span>09</span><p>一段温暖的回忆，等我慢慢写给你。</p></div>
+            </article>
+            <article class="photo-slide" data-index="9">
+              <figure class="photo-frame landscape"><img src="assets/photos/IMG_1933.jpg" alt="妈妈和孩子在车里的合影" loading="lazy" /></figure>
+              <div class="caption"><span>10</span><p>一段温暖的回忆，等我慢慢写给你。</p></div>
+            </article>
+            <article class="photo-slide" data-index="10">
+              <figure class="photo-frame landscape"><img src="assets/photos/IMG_2091.jpg" alt="妈妈和孩子在活动现场的合影" loading="lazy" /></figure>
+              <div class="caption"><span>11</span><p>一段温暖的回忆，等我慢慢写给你。</p></div>
+            </article>
+            <article class="photo-slide" data-index="11">
+              <figure class="photo-frame landscape"><img src="assets/photos/IMG_5364.jpg" alt="妈妈和孩子在金色银杏树下的合影" loading="lazy" /></figure>
+              <div class="caption"><span>12</span><p>一段温暖的回忆，等我慢慢写给你。</p></div>
+            </article>
+            <article class="photo-slide" data-index="12">
+              <figure class="photo-frame portrait"><img src="assets/photos/IMG_6183.jpg" alt="一张和妈妈的视频通话截图" loading="lazy" /></figure>
+              <div class="caption"><span>13</span><p>一段温暖的回忆，等我慢慢写给你。</p></div>
+            </article>
+          </div>
+          <button class="gallery-arrow next" id="nextButton" type="button" aria-label="查看下一张照片">→</button>
+        </div>
+
+        <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+        <p class="swipe-note">向左或向右滑动照片</p>
+        <footer>愿每一个平常的日子，都被温柔记得。</footer>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
+
